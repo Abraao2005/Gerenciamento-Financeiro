@@ -1,0 +1,16 @@
+{
+    "name": "abraao2005/gerenciamento-financeiro",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "JADS\\GerenciamentoFinanceiro\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abraao2005",
+            "email": "abraao20001@gmail.com"
+        }
+    ],
+    "require": {}
+}
