@@ -10,7 +10,12 @@ class Routes
     public function __construct()
     {
         $this->routes = [
-            "/" => "HomeController@index"
+            "" => "HomeController@index",
+            "teste" => "TesteController@index",
+            "teste/{id}" => "TesteController@busca",
+            "quadrado" => "TesteController@teste",
+            "quadrado/{id}" => "TesteController@index",
+            "quadrado/{id}/{dd}" => "9h@a",
         ];
     }
 
@@ -19,4 +24,5 @@ class Routes
     {
         return $this->routes;
     }
+
 }

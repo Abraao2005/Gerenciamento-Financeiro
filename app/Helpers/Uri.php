@@ -6,7 +6,7 @@ class Uri{
 
 
     public static function get_uri(){
-     return $_SERVER["REQUEST_URI"];
+    return trim($_SERVER["REQUEST_URI"],"/");
     }
 
 }
