@@ -1,4 +1,9 @@
-
+<?php
+   session_set_cookie_params([
+    'httponly' => true,    // Impede acesso via JavaScript
+]);
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,7 @@
     <title>Gerenciamento Financeiro</title>
 </head>
 <body>
+
 
 
     

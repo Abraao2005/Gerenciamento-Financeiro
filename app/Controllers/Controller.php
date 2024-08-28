@@ -14,12 +14,12 @@ class Controller
         // O 0 vai ser igual ao controller e 1 o método
 
         $uri = $this->Uri();
-        echo $uri;
         $routes = new Routes();
         $routes = $routes->get_routes();
         if (isset($routes[$uri])) {
             $result = explode("@", $routes[$uri]);
             $caminho = "JADS\\GerenciamentoFinanceiro\\Controllers\\" . $result[0];
+
             if (class_exists($caminho)) {
                 $controller = new $caminho();
                 $metodo = $result[1];
@@ -27,6 +27,8 @@ class Controller
             } else {
                 require_once(get_view_path() . "Standard/notFound.php");
             }
+        } else {
+            require_once(get_view_path() . "Standard/notFound.php");
         }
     }
 
