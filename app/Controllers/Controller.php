@@ -19,7 +19,6 @@ class Controller
         if (isset($routes[$uri])) {
             $result = explode("@", $routes[$uri]);
             $caminho = "JADS\\GerenciamentoFinanceiro\\Controllers\\" . $result[0];
-
             if (class_exists($caminho)) {
                 $controller = new $caminho();
                 $metodo = $result[1];

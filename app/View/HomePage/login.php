@@ -36,6 +36,6 @@
         </div>
 
     </form>
-    <p><a href="">Registrar</a></p>
+    <p><a href="register">Registrar</a></p>
 
 </main>

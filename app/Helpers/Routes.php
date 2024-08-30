@@ -11,6 +11,8 @@ class Routes
     {
         $this->routes = [
             "" => "HomeController@index",
+            "register"=> "RegisterController@index",
+            "register/{username}/{password}"=> "RegisterController@register"
         ];
     }
 
